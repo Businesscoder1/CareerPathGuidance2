@@ -1,6 +1,6 @@
 /* Container for the entire assessment page */
 .assessment-container {
-  max-width: 900px;
+  width: 100vw;
   margin: 0 auto;
   padding: 40px;
   text-align: center;
@@ -26,7 +26,7 @@
   background: #e3f4db;
   margin-bottom: 10px;
   text-align: left;  /* Align text to the left */
-  width: 100%;       /* Ensure it spans the full width */
+  width: 90vw;       /* Ensure it spans the full width */
   margin-left: 0;     /* Remove any extra left margins */
   padding: 10px;
 }
@@ -34,16 +34,17 @@
 /* Slider container for better alignment */
 .slider-container {
   position: relative;
-  width: 100%; /* Ensure the slider takes the full width */
+  width: 80vw; /* Ensure the slider takes the full width */
+
   margin: 10px 0;
-  background-color: rgb(201, 223, 245);
+  background-color: rgb(198, 222, 246);
   border-radius: 5px;
 }
 
 /* Slider styling */
 .slider {
   appearance: none;
-  width: 600px;
+  width: 80vw;
   height: 8px;
   
   background: #1e0404;
@@ -63,7 +64,7 @@
   width: 20px;
   height: 20px;
   
-  background: #ee0c57;
+  background: #ec530c;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -71,6 +72,7 @@
 
 .slider::-webkit-slider-thumb:hover {
   background-color: #1d0802;
+  
   
 }
 
@@ -80,7 +82,7 @@
   top: -40px;
   left: 0;
   transform: translateX(-50%);
-  background-color: #f5f1f0;
+  background-color: #e3e3e3;
   color: black;
   margin-top: 10px;
   padding: 5px 10px;
@@ -98,7 +100,7 @@
   margin-left: -5px;
   border-width: 6px;
   border-style: solid;
-  border-color: #e86792 transparent transparent transparent;
+  border-color: #f281a7 transparent transparent transparent;
 }
 
 /* Button styling */

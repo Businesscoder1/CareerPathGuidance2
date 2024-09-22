@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'; // Assuming you're using React Router f
 import './SideBar.css'; // Import the CSS file
 import knowledge from '../../assets/knowledge.png'
 import menu from '../../assets/menu.png'
+import profileIcon from '../../assets/profileIcon.png'; // Add the profile icon image
+
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -25,16 +27,26 @@ const SideBar = () => {
     <div>
       {/* Hamburger Icon */}
       <div className='hamburger' onClick={toggleSidebar}>
-        <img src={menu} id='hamburgerimg' />
+        <img src={menu} id='hamburgerimg' alt="Menu Icon"/>
       </div>
 
       {/* Sidebar */}
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-        {/* Logo and Website Name */}
-        <div className="sidebar-header">
-          <img src={knowledge} className="logo" />
+        
+         {/* Logo and Website Name */}
+         <div className="sidebar-header">
+          <img src={knowledge} className="logo" alt="Logo" />
           <span className="site-name">GuideME</span>
         </div>
+          {/* Profile Section */}
+        <div className="profile-section">
+          <Link to="/profile" className="profile-link">
+            <img src={profileIcon} className="profile-icon" alt="Profile" />
+            <p className="username">trishul47</p> {/* Replace with dynamic username if needed */}
+          </Link>
+        </div>
+
+       
 
         {/* Navigation Links */}
         <nav className="sidebar-nav">
