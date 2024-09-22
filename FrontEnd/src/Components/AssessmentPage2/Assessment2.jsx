@@ -22,6 +22,10 @@ const Assessment2 = () => {
     navigate('/assessment3');
   };
 
+  const openAssessmentPage1=()=>{
+    navigate('/assessment1');
+  }
+
   return (
     <div className="assessment-container">
       <h1>Assessment Page 2</h1>
@@ -47,10 +51,16 @@ const Assessment2 = () => {
           </div>
         </div>
       ))}
-
-      <button className="Next" onClick={openAssessmentPage3}>
+       <div className='nextback'>
+       <button className="back" onClick={openAssessmentPage1}>
+        Back
+      </button>
+       <button className="Next" onClick={openAssessmentPage3}>
         Next
       </button>
+      
+       </div>
+      
     </div>
   );
 };

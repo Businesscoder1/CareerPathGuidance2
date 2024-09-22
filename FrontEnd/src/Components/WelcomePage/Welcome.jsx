@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './Welcome.css';
-
+// import background from '../../assets/bg.jpg'
 const Welcome = () => {
   const navigate = useNavigate(); // Use the hook to get the navigate function
 
   const openAssessmentPage = () => {
-    navigate('/assesment1'); // Correctly navigate to the assessment page
+    navigate('/assessment1'); // Correctly navigate to the assessment page
   };
 
   return (

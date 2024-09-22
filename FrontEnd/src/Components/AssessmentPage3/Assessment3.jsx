@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Assessment3.css'; // Include shared CSS file
+import { useNavigate } from 'react-router-dom';
 
 const Assessment3 = () => {
   const [ratings, setRatings] = useState({
@@ -19,12 +20,15 @@ const Assessment3 = () => {
     InterestInNetworkingSkills: 0,
     InterestInWebDevelopment: 0,
   });
-
+  const navigate=useNavigate();
   const handleRatingChange = (skill, value) => {
     if (value >= 0 && value <= 10) {
       setRatings((prev) => ({ ...prev, [skill]: value }));
     }
   };
+  const openAssessmentpage2=()=>{
+    navigate('/assessment2')
+  }
 
   return (
     <div className="assessment-container">
@@ -48,8 +52,11 @@ const Assessment3 = () => {
           </div>
         </div>
       ))}
-
+      <div className='nextback'>
+      <button className='back'onClick={openAssessmentpage2}>Back</button>
       <button className="submit-button">Submit</button>
+      </div>
+     
     </div>
   );
 };

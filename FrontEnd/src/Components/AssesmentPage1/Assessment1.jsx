@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Assessment1.css';
 import { useNavigate } from 'react-router-dom';
+// import background from '../../assets/bg.jpg'
 
 const Assessment1 = () => {
   const [cgpa, setCgpa] = useState(0);
@@ -28,7 +29,7 @@ const Assessment1 = () => {
 
   return (
     
-    <div className="assessment-container">
+    <div className="assessment-container" >
       <h1>Tell us about your Academics</h1>
 
       <div className="cgpa-section">

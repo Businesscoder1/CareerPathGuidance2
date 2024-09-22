@@ -2,10 +2,10 @@
 .assessment-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   background-color: wheat;
   border-radius: 12px;
   color: black;
@@ -22,7 +22,8 @@
 
 /* Headings for each skill */
 .skill-section h4 {
-  font-size: 18px;
+  font-size: 20px;
+  background: #e3f4db;
   margin-bottom: 10px;
   text-align: left;  /* Align text to the left */
   width: 100%;       /* Ensure it spans the full width */
@@ -35,17 +36,17 @@
   position: relative;
   width: 100%; /* Ensure the slider takes the full width */
   margin: 10px 0;
-  background-color: rgb(248, 243, 235);
+  background-color: rgb(201, 223, 245);
   border-radius: 5px;
 }
 
 /* Slider styling */
 .slider {
   appearance: none;
-  width: 100%;
+  width: 600px;
   height: 8px;
-  background-color: black;
-  /* background: #f69191; */
+  
+  background: #1e0404;
   border-radius: 5px;
   outline: none;
   transition: opacity 0.3s ease;
@@ -101,12 +102,15 @@
 }
 
 /* Button styling */
+
 .submit-button {
   padding: 10px 20px;
-  background-color: #f2b570;
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+
+
   color: white;
   width: 110px;
-  margin-left: 40%;
+  
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -116,5 +120,6 @@
 }
 
 .submit-button:hover {
-  background-color: #ff9472;
+  background: linear-gradient(135deg, #fcb55e 0%, #ebcf50 100%);
+
 }

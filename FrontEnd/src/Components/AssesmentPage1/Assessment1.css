@@ -1,9 +1,21 @@
+body{
+  background-image:url('/CareerPath/FrontEnd/src/assets/html-css-collage-concept-with-person.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .assessment-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Align everything to the start (left) */
   padding: 20px;
   border-radius: 8px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 20%;

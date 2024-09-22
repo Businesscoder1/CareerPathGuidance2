@@ -23,7 +23,7 @@ import Assessment3 from './Components/AssessmentPage3/Assessment3';
             <Route path='/home' element={<MainButton/>}/>
             <Route path='/forgot' element={<ForgotPassword/>}/>
             <Route path='/mainpage' element={<Welcome/>}/>
-            <Route path="/assesment1" element={<Assessment1 />} />
+            <Route path="/assessment1" element={<Assessment1 />} />
             <Route path='/assessment2' element={<Assessment2/>}/>
             <Route path='/assessment3' element={<Assessment3/>}/>
           </Routes>
