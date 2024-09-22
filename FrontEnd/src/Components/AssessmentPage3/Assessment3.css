@@ -1,4 +1,8 @@
 /* Container for the entire assessment page */
+body{
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+}
 .assessment-container {
   width: 100vw;
   margin: 0 auto;
@@ -6,7 +10,7 @@
   text-align: center;
   font-family: 'Arial', sans-serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  background-color: wheat;
+  
   border-radius: 12px;
   color: black;
 }
@@ -26,7 +30,7 @@
   background: #e3f4db;
   margin-bottom: 10px;
   text-align: left;  /* Align text to the left */
-  width: 90vw;       /* Ensure it spans the full width */
+  max-width: 90vw;       /* Ensure it spans the full width */
   margin-left: 0;     /* Remove any extra left margins */
   padding: 10px;
 }
@@ -34,7 +38,7 @@
 /* Slider container for better alignment */
 .slider-container {
   position: relative;
-  width: 80vw; /* Ensure the slider takes the full width */
+  width: 60vw; /* Ensure the slider takes the full width */
 
   margin: 10px 0;
   background-color: rgb(198, 222, 246);
@@ -44,7 +48,7 @@
 /* Slider styling */
 .slider {
   appearance: none;
-  width: 80vw;
+  width: 60vw;
   height: 8px;
   
   background: #1e0404;

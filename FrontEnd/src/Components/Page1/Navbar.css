@@ -1,65 +1,101 @@
-*{
-  padding: 0%;
-  margin: 0%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 
-    width: 100vw;
-    
-    color: #fff;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  width: 100%;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  height: 25px;
+  margin-left: 20px;
+  width: 30px;
+  padding-right: 5px;
+}
+
+.signup {
+  margin-left: 10px;
+  margin-right: 60px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+  background-color: #0f62bb;
+}
+
+.login {
+  background-color: #333;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  border: none;
+  width: 80px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.login:hover {
+  background-color: #433a3a;
+}
+
+.hamburgar {
+  width: 20px;
+  height: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
+  .signup,
+  .login {
+    margin: 5px 0;
+    width: 100%;
+  }
+
   .logo {
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    
+    margin-bottom: 10px;
   }
-  .image{
-    height: 25px;
-    margin-left: 20px;
-    width: 30px;
-    padding-right: 5px;
+}
+
+@media (max-width: 480px) {
+  .signup,
+  .login {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .signup {
-    margin-left: 10px;
-    margin-right: 60px;
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    width: 80px;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .navbar {
+    padding: 10px;
   }
-  .signup:hover{
-    background-color: #0f62bb;
-  }
-  .login{
-    background-color: #333;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px 10px;
-    
-    color: #fff;
-    border: none;
-    width: 80px;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 30px;
-  }
-  .login:hover{
-    background-color: #433a3a;
-  }
-  .hamburgar{
-    width: 20px;
-    height: 25px;
-    color: white;
-    
-  }
+}

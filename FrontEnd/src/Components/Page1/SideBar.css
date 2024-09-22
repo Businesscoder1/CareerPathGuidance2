@@ -17,6 +17,7 @@
 .hamburger{
   background-color: white;
   margin-top: 0px;
+  border-radius: 5px;
   
 }
 #hamburgerimg{
@@ -89,7 +90,7 @@
 }
 
 .nav-link:hover {
-  background-color: #444;
+  background-color: #323232;
 }
 
 .icon {
