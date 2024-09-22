@@ -1,0 +1,110 @@
+/* Container for the entire assessment page */
+.assessment-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  border-radius: 12px;
+  color: white;
+}
+
+/* Individual skill sections */
+.skill-section {
+  margin: 20px 0;
+}
+
+/* General container for form fields to ensure equal width */
+.field-container {
+  width: 100%; /* Ensures that all containers share the same width */
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Consistent field length for text inputs, sliders, and radio buttons */
+.input-container, .slider-container, .radio-container {
+  width: 100%; /* Uniform width across different elements */
+  margin: 10px 0;
+}
+
+/* Slider styling */
+.slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%; /* Makes sure all sliders are the same width */
+  height: 6px;
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  border-radius: 5px;
+  outline: none;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+/* Styling for the slider's thumb (the circle) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #4CAF50;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: #45a049;
+}
+
+/* Input fields styled to match the same width */
+input[type="text"], select {
+  width: 100%; /* Ensures equal width for all input fields */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styling radio buttons in a horizontal layout */
+.radio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensures that radio buttons take the same width as others */
+}
+
+.radio-label {
+  flex: 1; /* Ensures that each radio button label has equal space */
+  text-align: left;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex: 2; /* Keeps the buttons uniform */
+}
+
+/* Button styling */
+.submit-button, .Next {
+  width: 100%; /* Keeps buttons width uniform */
+  padding: 10px;
+  background-color: #f2709c;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover, .Next:hover {
+  background-color: #ff9472;
+}
