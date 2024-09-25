@@ -27,8 +27,8 @@ const Assessment2 = () => {
   }
 
   return (
-    <div className="assessment-container">
-      <h1>Assessment Page 2</h1>
+    <div className=" font-serif p-10">
+      <h1 className='text-2xl text-orange-500 font-mono'>Know, Rate Yourself In Soft-Skills</h1>
 
       {Object.keys(ratings).map((skill) => (
         <div key={skill} className="skill-section">
@@ -52,7 +52,7 @@ const Assessment2 = () => {
         </div>
       ))}
        <div className='nextback'>
-       <button className="back" onClick={openAssessmentPage1}>
+       <button className="back m-10" onClick={openAssessmentPage1}>
         Back
       </button>
        <button className="Next" onClick={openAssessmentPage3}>

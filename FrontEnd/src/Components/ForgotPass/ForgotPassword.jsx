@@ -12,7 +12,7 @@ const ForgotPassword = () => {
 
   return (
     <div className="forgot-password-container">
-      <div className="forgot-password-box">
+      <div className="forgot-password-box font-mono">
         <h2 className="forgot-password-title">Forgot Password</h2>
         <p className="forgot-password-text">Enter your email address below, and we'll send you a link to reset your password.</p>
 
@@ -29,11 +29,11 @@ const ForgotPassword = () => {
             />
           </div>
 
-          <button type="submit" className="submit-button">Send Reset Link</button>
+          <button type="submit" className="bg-blue-500 w-40 h-10 rounded-xl hover:bg-blue-400">Send Reset Link</button>
         </form>
 
-        <div className="back-to-login">
-          <a href="/login">Back to Login</a>
+        <div className="back-to-login mt-5">
+          <a href="/login" className='text-sm text-blue-500 hover:text-red-500 '>Back to Login</a>
         </div>
       </div>
     </div>

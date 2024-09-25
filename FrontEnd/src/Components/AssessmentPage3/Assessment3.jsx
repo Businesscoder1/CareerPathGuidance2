@@ -32,7 +32,7 @@ const Assessment3 = () => {
 
   return (
     <div className="assessment-container">
-      <h1>Evaluate Your Proficiency in Programming and Technical Skills</h1>
+      <h1 className='text-2xl font-mono'>Evaluate Your Proficiency in Programming and Technical Skills</h1>
 
       {Object.keys(ratings).map((skill) => (
         <div key={skill} className="skill-section">
@@ -53,7 +53,7 @@ const Assessment3 = () => {
         </div>
       ))}
       <div className='nextback'>
-      <button className='back'onClick={openAssessmentpage2}>Back</button>
+      <button className='back m-8'onClick={openAssessmentpage2}>Back</button>
       <button className="submit-button">Submit</button>
       </div>
      

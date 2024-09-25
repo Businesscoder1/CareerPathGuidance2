@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Assessment1.css';
 import { useNavigate } from 'react-router-dom';
-// import background from '../../assets/bg.jpg'
 
 const Assessment1 = () => {
   const [cgpa, setCgpa] = useState(0);
@@ -29,12 +28,13 @@ const Assessment1 = () => {
 
   return (
     
-    <div className="assessment-container" >
-      <h1>Tell us about your Academics</h1>
-
-      <div className="cgpa-section">
+    <div className=" font-serif p-18 justify-center align-middle ml-10" >
+      <h1 className='text-3xl text-orange-600 mt-8 ml-10 '>Tell us about your Academics</h1>
+      
+      <div className="cgpa-section mt-10 ">
         <label>CGPA (0-10): </label>
         <input
+          className='bg-white w-30 rounded-md '
           type="text"
           value={cgpa}
           onChange={handleCgpaChange}
@@ -50,16 +50,18 @@ const Assessment1 = () => {
         <label>
          
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="in-progress"
             checked={courseStatus === 'in-progress'}
             onChange={() => setCourseStatus('in-progress')}
           />
-          <span className='custom-radio'></span>
+          <span className='custom-radio '></span>
           In Progress
         </label>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="completed"
             checked={courseStatus === 'completed'}
@@ -74,6 +76,7 @@ const Assessment1 = () => {
         <h3>Academic Achievements:</h3>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="high"
             checked={academicAchievements === 'high'}
@@ -84,6 +87,7 @@ const Assessment1 = () => {
         </label>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="medium"
             checked={academicAchievements === 'medium'}
@@ -94,6 +98,7 @@ const Assessment1 = () => {
         </label>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="low"
             checked={academicAchievements === 'low'}
@@ -104,9 +109,9 @@ const Assessment1 = () => {
         </label>
       </div>
 
-      <div className="dropdown-section">
-        <h3>Personal Interest:</h3>
-        <select value={personalInterest} onChange={(e) => setPersonalInterest(e.target.value)}>
+      <div className=" w-50 ">
+        <h3 className='font-bold '>Personal Interest:</h3>
+        <select value={personalInterest} className='  w-50' onChange={(e) => setPersonalInterest(e.target.value)}>
           <option value="">Select...</option>
           <option value="travelling">Travelling</option>
           <option value="coding">Coding</option>
@@ -118,9 +123,10 @@ const Assessment1 = () => {
       </div>
 
       <div className="radio-section">
-        <h3>Internship Experience:</h3>
+        <h3 className='font-bold  '>Internship Experience:</h3>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="yes"
             checked={internshipExperience === 'yes'}
@@ -131,6 +137,7 @@ const Assessment1 = () => {
         </label>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="no"
             checked={internshipExperience === 'no'}
@@ -142,9 +149,10 @@ const Assessment1 = () => {
       </div>
 
       <div className="radio-section">
-        <h3>Certificates:</h3>
+        <h3 className='font-bold  text-balance'>Certificates:</h3>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="yes"
             checked={certificates === 'yes'}
@@ -155,6 +163,7 @@ const Assessment1 = () => {
         </label>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="no"
             checked={certificates === 'no'}
@@ -169,6 +178,7 @@ const Assessment1 = () => {
         <h3>Leadership Experience:</h3>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="yes"
             checked={leadershipExperience === 'yes'}
@@ -179,6 +189,7 @@ const Assessment1 = () => {
         </label>
         <label>
           <input
+            className=' focus:ring-4 '
             type="radio"
             value="no"
             checked={leadershipExperience === 'no'}

@@ -9,18 +9,18 @@ body{
   padding: 0;
 }
 
-.assessment-container {
+/* .assessment-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align everything to the start (left) */
+  justify-content: flex-start; 
   padding: 20px;
   border-radius: 8px;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 20%;
-  align-items: flex-start; /* Align content to the left */
-}
+  align-items: flex-start; 
+} */
 
 .assessment-container h1 {
   text-align: center;
@@ -51,22 +51,25 @@ body{
   display: inline-block;
   margin-right: 15px; /* Add space between radio buttons */
   cursor: pointer;
+  
 }
 
 label {
   display: inline-block;
   margin: 5px 0;
-  text-align: left;
+  /* text-align: left; */
+  
 }
 
 input[type="radio"] {
-  margin-right: 5px;
+  margin-right: 10px;
   margin-left: 40px;
   cursor: pointer;
+  
 }
 
 select {
-  width: 100%;
+  width: 60%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -79,7 +82,7 @@ select {
   height: 20px;
   
   margin-right: 10px;
-
+  
   position: relative;
   transition: background 0.3s;
 }

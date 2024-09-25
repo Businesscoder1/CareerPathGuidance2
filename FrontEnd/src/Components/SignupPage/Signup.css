@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #fffbd5 0%, #b20a2c 100%);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   }
   
   /* Signup Box */
@@ -58,17 +58,17 @@
   }
   
   /* Signup Button */
-  .signup-btn {
+  /* .signup-btn {
     width: 100%;
     padding: 12px;
-    background-color: #6e8efb;
+    
     border: none;
     color: white;
     font-size: 18px;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+  } */
   
   .signup-btn:hover {
     background-color: #5a78d6;

@@ -23,7 +23,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <div className="login-box">
+      <div className="login-box font-mono" >
         <h2>Welcome to GuideME</h2>
         <p>Please log in to continue</p>
         <form onSubmit={handleLogin}>
@@ -47,10 +47,10 @@ const Login = () => {
               required 
             />
           </div>
-          <button type="submit" className="login-btn">Login</button>
+          <button type="submit" className="login-btn p-10  bg-blue-500">Login</button>
         </form>
         {/* Forgot Password Link */}
-        <button className='forgot' onClick={openForget}>Forgot Password?</button>
+        <button className='forgot ' onClick={openForget}>Forgot Password?</button>
       </div>
     </div>
   );

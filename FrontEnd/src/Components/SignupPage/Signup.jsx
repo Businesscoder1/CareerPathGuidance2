@@ -40,12 +40,12 @@ const Signup = () => {
 
   return (
     <div className="signup-container">
-      <div className="signup-box">
+      <div className="signup-box font-mono">
         <h2>Create Account</h2>
         <form onSubmit={handleSignup}>
           {/* Name Input */}
           <div className="input-group">
-            <label>Name</label>
+            <label>Username</label>
             <input 
               type="text" 
               placeholder="Enter your name"
@@ -123,7 +123,7 @@ const Signup = () => {
           {error && <p className="error-message">{error}</p>}
 
           {/* Submit Button */}
-          <button type="submit" className="signup-btn" onClick={openClerkLogin}>Create Account</button>
+          <button type="submit" className=' bg-blue-500 p-4 justify-center align-middle h-10 rounded-lg ' onClick={openClerkLogin} >Create Account</button>
         </form>
       </div>
     </div>

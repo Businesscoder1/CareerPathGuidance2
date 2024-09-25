@@ -28,6 +28,7 @@ body{
 .skill-section h4 {
   font-size: 20px;
   background: #e3f4db;
+  border-radius:20px;
   margin-bottom: 10px;
   text-align: left;  /* Align text to the left */
   max-width: 90vw;       /* Ensure it spans the full width */
@@ -38,7 +39,7 @@ body{
 /* Slider container for better alignment */
 .slider-container {
   position: relative;
-  width: 60vw; /* Ensure the slider takes the full width */
+  width: 60vw; 
 
   margin: 10px 0;
   background-color: rgb(198, 222, 246);
@@ -68,7 +69,7 @@ body{
   width: 20px;
   height: 20px;
   
-  background: #ec530c;
+  /* background: #ec530c; */
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
